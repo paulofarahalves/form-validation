@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="screen">
+        <div class="leftside">
+            <img src="assets/images/financial_data.png" alt="">
+        </div>
+        <div class="rightside">
+            <h1>Create an account</h1>
+            <form method="post" class="validator">
+                <label>
+                    Your name:<br/>
+                    <input type="text" name="name" data-rules="required|min=2">
+                </label>
+                <label>
+                    Your e-mail:<br/>
+                    <input type="text" name="email" data-rules="required|email">
+                </label>
+                <label>
+                    Your password:<br/>
+                    <input type="text" name="password" data-rules="required|min=4">
+                </label>
+                <label>
+                    <input type="submit" value="Register">
+                </label>
+            </form>
+            <div>
+                Already have an account? <a href="">Login</a>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
